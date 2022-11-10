@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKY ADVENTURE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+  <link rel="icon" href="https://res.cloudinary.com/dss08c3ox/image/upload/v1667933575/Untitled-2_rdbi8w.png">
+
+  <link rel="stylesheet" href="./gallery.css">
+</head>
+
+<body>
+  <header class="header">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <a class="navbar-brand" href="./index.html"><img class="logo-img ml-4"
+          src="https://res.cloudinary.com/dss08c3ox/image/upload/v1662817904/zdr_vrrvup.png" height="60px" width="160px"
+          alt="logo"></a>
+      <a href="./index.html"><i
+          class="bi bi-house-door h4 ml-5 align-items-center justify-content-center position-relative   d-flex text-light"></i></a>
+
+      <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav  ml-2">
+
+          <li class="nav-item active ">
+            <a class="nav-link " href="./index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./paragliding.html">Paragliding</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./quadbike.html">Quad Bike</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+          <div class="lang-menu mt-1 ml-2">
+            <div class="selected-lang">
+              English
+            </div>
+            <ul>
+              <li>
+                <a href="#" class="en">English</a>
+              </li>
+              <li>
+                <a href="" class="ru">Russian</a>
+              </li>
+
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <!--Navbar End-->
+  <div class="full-img" id="fullImgBox">
+    <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660939055/clement-roy-VUsaEK03Hdk-unsplash_gjgagf.jpg"
+      id="fullImg">
+    <span onclick="closeFullImg()">X</span>
+  </div>
+  <div class="img-gallery">
+    <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660939055/clement-roy-VUsaEK03Hdk-unsplash_gjgagf.jpg"
+      onclick="openFullImg(this.src)">
+    <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660939055/clement-roy-VUsaEK03Hdk-unsplash_gjgagf.jpg"
+      onclick="openFullImg(this.src)">
+    <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660939055/clement-roy-VUsaEK03Hdk-unsplash_gjgagf.jpg"
+      onclick="openFullImg(this.src)">
+    <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660939055/clement-roy-VUsaEK03Hdk-unsplash_gjgagf.jpg"
+      onclick="openFullImg(this.src)">
+    <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660939055/clement-roy-VUsaEK03Hdk-unsplash_gjgagf.jpg"
+      onclick="openFullImg(this.src)">
+    <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660939055/clement-roy-VUsaEK03Hdk-unsplash_gjgagf.jpg"
+      onclick="openFullImg(this.src)">
+    <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660939055/clement-roy-VUsaEK03Hdk-unsplash_gjgagf.jpg"
+      onclick="openFullImg(this.src)">
+    <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660939055/clement-roy-VUsaEK03Hdk-unsplash_gjgagf.jpg"
+      onclick="openFullImg(this.src)">
+  </div>
+
+  <!-- <div class="container">
+    <div class="row mt-5 col-lg-12 align-items-center justify-content-center d-flex position-relative  ">
+      <div class="item  col-md-3 mb-5">
+        <a href="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773986/card1_mklqde.png" class="fancybox"
+          data-fancybox="gallery1">
+          <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773986/card1_mklqde.png" width="100%"
+            height="100%" class="rounded">
+        </a>
+      </div>
+      <div class="item  col-md-3 mb-5">
+        <a href="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773986/card4_aupg1h.png" class="fancybox"
+          data-fancybox="gallery1">
+          <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773986/card4_aupg1h.png" width="100%"
+            height="100%" class="rounded">
+        </a>
+      </div>
+      <div class="item col-md-3 mb-5">
+        <a href="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773985/card2_typco8.png" class="fancybox"
+          data-fancybox="gallery1">
+          <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773985/card2_typco8.png" width="100%"
+            height="100%" class="rounded">
+        </a>
+      </div>
+      <div class="item  col-md-3 mb-5">
+        <a href="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773986/card1_mklqde.png" class="fancybox"
+          data-fancybox="gallery1">
+          <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773986/card1_mklqde.png" width="100%"
+            height="100%" class="rounded">
+        </a>
+      </div>
+      <div class="item  col-md-3 mb-5">
+        <a href="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773988/card3_pk5wks.png" class="fancybox"
+          data-fancybox="gallery1">
+          <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773988/card3_pk5wks.png" width="100%"
+            height="100%" class="rounded">
+        </a>
+      </div>
+      <div class="item  col-md-3 mb-5">
+        <a href="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773988/card3_pk5wks.png" class="fancybox"
+          data-fancybox="gallery1">
+          <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773988/card3_pk5wks.png" width="100%"
+            height="100%" class="rounded">
+        </a>
+      </div>
+      <div class="item  col-md-3 mb-5">
+        <a href="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773988/card3_pk5wks.png" class="fancybox"
+          data-fancybox="gallery1">
+          <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773988/card3_pk5wks.png" width="100%"
+            height="100%" class="rounded">
+        </a>
+      </div>
+      <div class="item  col-md-3 mb-5">
+        <a href="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773988/card3_pk5wks.png" class="fancybox"
+          data-fancybox="gallery1">
+          <img src="https://res.cloudinary.com/dss08c3ox/image/upload/v1660773988/card3_pk5wks.png" width="100%"
+            height="100%" class="rounded">
+        </a>
+      </div>
+    </div>
+  </div> -->
+  <h3 class="video d-flex align-items-center justify-content-center text-center position-relative mb-4">
+    Video
+  </h3>
+
+  <!--Youtube Start-->
+  <div class="container-fluid d-flex  align-items-center justify-content-center position-relative mb-5">
+    <div class="row">
+      <div class="
+      col-md-6 ">
+        <iframe class="w-100 rounded" height="320" src="https://www.youtube.com/embed/HjAAC6BGp5c"
+          title="8: Responsive videos in Bootstrap 3 - Learn Bootstrap 3 front-end programming" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class=" col-md-6  "><iframe class="w-100 rounded " height="320"
+          src="https://www.youtube.com/embed/HjAAC6BGp5c"
+          title="8: Responsive videos in Bootstrap 3 - Learn Bootstrap 3 front-end programming" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></div>
+      <div class="
+      col-md-6 "><iframe class="w-100 rounded" height="320" src="https://www.youtube.com/embed/HjAAC6BGp5c"
+          title="8: Responsive videos in Bootstrap 3 - Learn Bootstrap 3 front-end programming" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></div>
+      <div class="
+      col-md-6 "><iframe class="w-100 rounded" height="320" src="https://www.youtube.com/embed/HjAAC6BGp5c"
+          title="8: Responsive videos in Bootstrap 3 - Learn Bootstrap 3 front-end programming" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></div>
+    </div>
+  </div>
+
+
+
+
+
+  <!--Youtube End-->
+
+
+
+
+
+
+  <!--Footer Start-->
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="mt-5 mr-5">
+    <div class="container text-center text-md-start mt-5 ml-4">
+      <!-- Grid row -->
+      <div class="row mt-5">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-5 ">
+          <!-- Content -->
+
+          <!-- <h6 class="text-uppercase fw-bold">Company name</h6> -->
+          <!-- <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #9b1bea; height: 2px" /> -->
+          <img class="img2"
+            src="https://res.cloudinary.com/dss08c3ox/image/upload/v1661208641/kisspng-american-express-credit-card-mastercard-visa-payme-american-express-one-5b24ade5099a38.8409761415291304690393_jhkoli.png"
+            height="60" alt="">
+          <img class="img2 " src="https://res.cloudinary.com/dss08c3ox/image/upload/v1661208641/Visa_Logo_csy63t.png"
+            height="15" alt="">
+          <img class="img2"
+            src="https://res.cloudinary.com/dss08c3ox/image/upload/v1661208641/Mastercard-logo_1_dwwpc9.png" height="30"
+            alt="">
+          <img class="img2  position-relative"
+            src="https://res.cloudinary.com/dss08c3ox/image/upload/v1661208641/UnionPay_logo_yxopuf.png" height="30"
+            alt="">
+          <!-- <p>
+                  Here you can use rows and columns to organize your footer
+                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                </p> -->
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Products</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #9b1bea; height: 2px" />
+          <p>
+            <a href="#!" class="text-dark">MDBootstrap</a>
+          </p>
+          <p>
+            <a href="#!" class="text-dark">MDWordPress</a>
+          </p>
+          <p>
+            <a href="#!" class="text-dark">BrandFlow</a>
+          </p>
+          <p>
+            <a href="#!" class="text-dark">Bootstrap Angular</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Useful links</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #9b1bea; height: 2px" />
+          <p>
+            <a href="#!" class="text-dark">Your Account</a>
+          </p>
+          <p>
+            <a href="#!" class="text-dark">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!" class="text-dark">Shipping Rates</a>
+          </p>
+          <p>
+            <a href="#!" class="text-dark">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Contact</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #9b1bea; height: 2px" />
+          <p><i class="bi bi-house mr-3"></i> New York, NY 10012, US</p>
+          <p><i class="bi bi-envelope mr-3"></i> info@example.com</p>
+          <p><i class="bi bi-phone mr-3"></i> + 01 234 567 88</p>
+          <p><i class="bi bi-print mr-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Right -->
+    <div class="social_media ml-4 d-flex  position-relative">
+      <a href="#" class="text-dark h4 mr-3">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="#" class="text-dark h4 mr-3">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://wa.me/+995579049486
+          " class="text-dark h4 mr-3">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="https://t.me/+995579049486" class="text-dark h4 mr-3">
+        <i class="bi bi-telegram"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-1" style="background-color: #8c3ff8; color: white;">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">SKY ADVENTURE.</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+  <!--Footer End-->
+
+  <script>!function () { var e, t, n, a; window.MyAliceWebChat || ((t = document.createElement("div")).id = "myAliceWebChat", (n = document.createElement("script")).type = "text/javascript", n.async = !0, n.src = "https://myalice-widget.netlify.app/index.js", (a = (e = document.body.getElementsByTagName("script"))[e.length - 1]).parentNode.insertBefore(n, a), a.parentNode.insertBefore(t, a), n.addEventListener("load", (function () { MyAliceWebChat.init({ selector: "myAliceWebChat", number: "995579049486", message: "Hello", color: "#25D366", channel: "wa", boxShadow: "none", text: "Message Us", theme: "light" }) }))) }();</script>
+
+  <!--BOOTSTRAP JS-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./gallery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
