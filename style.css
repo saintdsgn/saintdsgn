@@ -26,14 +26,15 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 280px !important;
+    height: 200px !important;
   }
   .slider__txt {
-    font-size: 16px !important;
+    font-size: 12px !important;
     display: inline-block !important;
-    margin-top: -110px !important;
+    margin-top: -125px !important;
     width: 90%;
-    color: rgb(220, 220, 220) !important;
+    font-weight: 550;
+    color: rgb(255, 255, 255) !important;
     font-family: "Noto", sans-serif;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
       rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -41,7 +42,7 @@ html {
   quote {
     display: flex;
     position: relative;
-    bottom: 80px;
+    bottom: 90px;
     font-size: 55px !important;
   }
   .slider__nav {
@@ -89,7 +90,7 @@ html {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: url(https://res.cloudinary.com/dss08c3ox/image/upload/v1668020566/pexels-gantas-vai%C4%8Diul%C4%97nas-4110203_lscy2y.jpg);
+  background-image: url(https://res.cloudinary.com/dss08c3ox/image/upload/v1660939056/miklos-kornyei-lIBOuiOQn9U-unsplash_lu04sk.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -171,9 +172,8 @@ html {
 }
 .slider__caption {
   font-size: 14px;
-  color: #111;
-  opacity: 0.5;
-  font-family: "Roboto";
+  color: rgb(255, 255, 255) !important;
+  font-family: "Noto";
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -188,15 +188,15 @@ html {
   margin-top: -20px;
   margin-bottom: 20px;
   max-width: 950px;
-  color: rgb(31, 29, 29);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -28px inset;
 }
 quote {
   font-family: "Arial";
   font-weight: bold;
   font-size: 100px;
-  color: #ec2027;
+  color: #711ba7;
   margin-bottom: 0;
 }
 
@@ -230,7 +230,8 @@ quote {
 }
 .nav-item a {
   text-decoration: none;
-  font-size: 14px !important;
+  font-size: 16px !important;
+  font-weight: 500;
 }
 .navbar a i {
   border: 2px;
@@ -783,7 +784,7 @@ a#scroll-btn:before {
     justify-content: center;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .bi-house-door {
     display: none !important;
   }
@@ -796,26 +797,9 @@ a#scroll-btn:before {
   .navbar .navbar-nav .nav-item::after {
     display: none;
   }
-  .navbar .navbar-nav .nav-item {
-    position: relative;
-  }
-  .navbar .navbar-nav .nav-item::after {
-    position: absolute;
-    bottom: 6px;
-    left: 0;
-    right: 0;
-    content: "";
-    background-color: rgb(134, 37, 158);
-    width: 0%;
-    height: 4px;
-    transition: all 0.6s;
-    border-radius: 17px;
-  }
+
   .navbar {
     padding: 0;
-  }
-  .navbar .navbar-nav .nav-item:hover::after {
-    width: 100%;
   }
 }
 

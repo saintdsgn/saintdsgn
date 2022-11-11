@@ -28,8 +28,8 @@ html {
   border-color: transparent !important;
 }
 .nav-item a {
-  text-decoration: none;
-  font-size: 14px !important;
+  font-size: 16px !important;
+  font-weight: 500;
 }
 .navbar a i {
   border: 2px;
@@ -645,3 +645,49 @@ footer a {
   }
 }
 /*Navbar Media Queries End*/
+#button {
+  display: inline-block;
+  background-color: #8c3ff8;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 90px;
+  right: 10px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  outline: none;
+  text-decoration: none !important;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+  outline: none;
+  text-decoration: none !important;
+}
+
+/* Styles for the content section */
+
+@media (min-width: 500px) {
+  #button {
+    margin: 30px;
+  }
+}
